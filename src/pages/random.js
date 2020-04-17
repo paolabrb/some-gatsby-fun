@@ -1,7 +1,8 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import Navbar from '../components/navbar'
 
-const randomWord = () => {
+const RandomWord = () => {
     return(
         <div>
         <Navbar />
@@ -21,5 +22,4 @@ const randomWord = () => {
     </div>
     )
 }
-
-export default randomWord;
+ export default RandomWord;
