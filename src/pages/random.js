@@ -13,7 +13,7 @@ const RandomWord = () => {
                     <div className="card-content center">
                     <span className="card-title">Here you go!</span>
                     <p>Random German Word!</p>
-                    <button>Another one?</button>
+                    <button className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
                  </div>
                 </div>
                 </div>

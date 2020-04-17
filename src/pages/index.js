@@ -11,7 +11,7 @@ const indexPage = () => {
                     <div className="card">
                         <div className="card-content center">
                         <span className="card-title">Bored today?</span>
-                        <button>Random German Word!</button>
+                        <button className="waves-effect waves-light btn-small indigo darken-4">Random German Word!</button>
                      </div>
                     </div>
                     </div>
