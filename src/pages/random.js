@@ -5,18 +5,24 @@ import JSONData from '../../public/words.json'
 class RandomWord extends React.Component {
     constructor(props) {
         super(props);
-        // Non chiamre this.setState() qui!
-        this.state = { randomWord: null };
-    };
+        let index = Math.floor(Math.random() * 345);
+        let firstWord = JSONData[index].word;
+        console.log(firstWord);
+        this.state = { randomWord: firstWord };
+        this.changeWord = this.changeWord.bind(this);
+    }
 
+    changeWord = event => {
+        let index = Math.floor(Math.random() * 345);
+        let newWord = JSONData[index].word;
+        this.setState({
+            randomWord: newWord
+        })
+        console.log(this.state)
+    }
 
     render() {
-        this.setState(state => {
-            let index = Math.floor(Math.random() * 345);
-            state.randomWord = JSONData[index].word;
-            console.log(this.state)
-        });
-
+                
         return(
             <div>
             <Navbar />
@@ -27,7 +33,7 @@ class RandomWord extends React.Component {
                         <div className="card-content center">
                         <span className="card-title">Here you go!</span>
                         <p>Your German Word is: { this.state.randomWord }</p>
-                        <button className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
+                        <button onClick={this.changeWord} className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
                      </div>
                     </div>
                     </div>
