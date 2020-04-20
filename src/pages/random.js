@@ -3,9 +3,9 @@ import Navbar from '../components/navbar'
 import JSONData from '../../public/words.json'
 
 const RandomWord = () => {
-    console.log(JSONData);
+    let index = Math.floor(Math.random() * 345);
+    const randomWord = JSONData[index].word;
 
-    
     return(
         <div>
         <Navbar />
@@ -15,7 +15,7 @@ const RandomWord = () => {
                 <div className="card">
                     <div className="card-content center">
                     <span className="card-title">Here you go!</span>
-                    <p>Random German Word!</p>
+                    <p>Your German Word is: { randomWord }</p>
                     <button className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
                  </div>
                 </div>
