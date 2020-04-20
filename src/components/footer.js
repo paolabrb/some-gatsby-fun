@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -9,7 +8,7 @@ const Footer = () => {
             <div className="footer-copyright">
                 <div className="container text-white">
                     Made with ❤️ by Paolabrb
-                    <a href="https://github.com/paolabrb/some-gatsby-fun" className="no-decor right text-white">
+                    <a href="https://github.com/paolabrb/some-gatsby-fun" className="no-decor right text-white" target="_blank">
                         <FontAwesomeIcon icon={faGithub} size="2x"/>
                     </a>
                 </div>

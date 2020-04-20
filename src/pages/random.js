@@ -8,20 +8,26 @@ class RandomWord extends React.Component {
         super(props);
         let index = Math.floor(Math.random() * 345);
         let firstWord = JSONData[index].word;
-        this.state = { randomWord: firstWord };
+        let dudenQuery = firstWord.replace(' ', '_');
+        this.state = { 
+            randomWord: firstWord,
+            dudenQuery: dudenQuery
+        };
         this.changeWord = this.changeWord.bind(this);
     }
 
     changeWord = event => {
         let index = Math.floor(Math.random() * 345);
         let newWord = JSONData[index].word;
+        let dudenQuery = newWord.replace(' ', '_');
         this.setState({
-            randomWord: newWord
-        })
+            randomWord: newWord,
+            dudenQuery: dudenQuery
+        });
     }
 
     render() {
-                
+
         return(
             <div>
             <Navbar />
@@ -34,7 +40,7 @@ class RandomWord extends React.Component {
                         <p id="random">{ this.state.randomWord }</p>
                         <div id="actions">
                             <button onClick={this.changeWord} className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
-                            <a href="#" className="no-decor waves-effect waves-light btn-small yellow accent-4">Duden this?</a>
+                            <a href={`https://www.duden.de/suchen/dudenonline/${this.state.dudenQuery}`} className="no-decor waves-effect waves-light btn-small yellow accent-4" target="_blank">Duden this?</a>
                         </div>
                      </div>
                     </div>
