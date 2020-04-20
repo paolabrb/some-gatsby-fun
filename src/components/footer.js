@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footer-copyright">
                 <div className="container text-white">
                     Made with ❤️ by Paolabrb
-                    <a href="https://github.com/paolabrb" className="no-decor right text-white">
+                    <a href="https://github.com/paolabrb/some-gatsby-fun" className="no-decor right text-white">
                         <FontAwesomeIcon icon={faGithub} size="2x"/>
                     </a>
                 </div>
