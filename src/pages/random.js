@@ -1,8 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Navbar from '../components/navbar'
+import JSONData from '../../public/words.json'
 
 const RandomWord = () => {
+    console.log(JSONData);
+
     
     return(
         <div>
@@ -23,4 +25,6 @@ const RandomWord = () => {
     </div>
     )
 }
- export default RandomWord;
+
+
+export default RandomWord;
