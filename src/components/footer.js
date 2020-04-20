@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-copyright">
                 <div className="container">
                     © 2014 Copyright Text
-                    <a className="right" href="#!">More Links</a>
+                    <a className="no-decor right" href="#!">More Links</a>
                 </div>
             </div>
         </footer>

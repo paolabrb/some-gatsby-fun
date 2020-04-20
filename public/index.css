@@ -1,22 +1,83 @@
-@custom-media --viewport-4 (min-width: 480px);
-@custom-media --viewport-7 (min-width: 768px);
-@custom-media --viewport-9 (min-width: 992px);
-@custom-media --viewport-12 (min-width: 1200px);
-
-#duden:hover, #brand:hover {
-    text-decoration: none;
-    color: white;
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .card-container {
+    flex: 1 0 auto;
     max-width: 60%;
     margin: 0 auto;
 }
 
+.index-container {
+    flex: 1 0 auto;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.no-decor:hover {
+    text-decoration: none;
+    color: white;
+}
+
 #actions {
-    max-width: 40%;
+    max-width: 30%;
     margin: 10px auto;
     display: flex;
     justify-content: space-around;
 }
 
+#random {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 320px) { 
+    #random {
+        font-size: 16px;
+    }
+
+    .card-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #actions {
+        max-width: 60%;
+        flex-wrap: wrap;
+    }
+
+    #actions button {
+        margin-bottom: 10px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    #random {
+        font-size: 30px;
+    }
+
+    #actions {
+        max-width: 45%;
+    }
+ }
+
+@media (min-width: 992px) { 
+    #random {
+        font-size: 45px;
+    }
+
+    #actions {
+        max-width: 40%;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    #random {
+        font-size: 56px;
+    }
+
+    #actions {
+        max-width: 30%;
+    }
+ }

@@ -31,10 +31,10 @@ class RandomWord extends React.Component {
                     <div className="card">
                         <div className="card-content center">
                         <span className="card-title">Your random german word:</span>
-                        <h1>{ this.state.randomWord }</h1>
+                        <p id="random">{ this.state.randomWord }</p>
                         <div id="actions">
                             <button onClick={this.changeWord} className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
-                            <a href="#" id="duden" className="waves-effect waves-light btn-small yellow accent-4">Duden this?</a>
+                            <a href="#" className="no-decor waves-effect waves-light btn-small yellow accent-4">Duden this?</a>
                         </div>
                      </div>
                     </div>
