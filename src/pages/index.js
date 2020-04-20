@@ -4,6 +4,7 @@ import Footer from '../components/footer'
 import { Link } from 'gatsby'
 
 
+
 const indexPage = () => {
     return(
         <div>
