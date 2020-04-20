@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 
 const indexPage = () => {
     return(
-        <div>
+        <div className="page">
             <Navbar />
             <div className="index-container my-5">
                 <div className="row">
