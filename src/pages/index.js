@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import { Link } from 'gatsby'
 
 
@@ -19,6 +20,7 @@ const indexPage = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
