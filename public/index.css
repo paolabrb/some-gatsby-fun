@@ -1,3 +1,8 @@
+@custom-media --viewport-4 (min-width: 480px);
+@custom-media --viewport-7 (min-width: 768px);
+@custom-media --viewport-9 (min-width: 992px);
+@custom-media --viewport-12 (min-width: 1200px);
+
 #duden:hover, #brand:hover {
     text-decoration: none;
     color: white;
@@ -14,3 +19,4 @@
     display: flex;
     justify-content: space-around;
 }
+
