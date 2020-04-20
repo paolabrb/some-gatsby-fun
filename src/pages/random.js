@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Navbar from '../components/navbar'
 
 const RandomWord = () => {
+    
     return(
         <div>
         <Navbar />
