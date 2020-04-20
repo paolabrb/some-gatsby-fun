@@ -7,7 +7,6 @@ class RandomWord extends React.Component {
         super(props);
         let index = Math.floor(Math.random() * 345);
         let firstWord = JSONData[index].word;
-        console.log(firstWord);
         this.state = { randomWord: firstWord };
         this.changeWord = this.changeWord.bind(this);
     }
@@ -18,7 +17,6 @@ class RandomWord extends React.Component {
         this.setState({
             randomWord: newWord
         })
-        console.log(this.state)
     }
 
     render() {
