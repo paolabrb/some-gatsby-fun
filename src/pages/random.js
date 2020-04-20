@@ -29,9 +29,12 @@ class RandomWord extends React.Component {
                     <div className="col s12 m6">
                     <div className="card">
                         <div className="card-content center">
-                        <span className="card-title">Here you go!</span>
-                        <p>Your German Word is: { this.state.randomWord }</p>
-                        <button onClick={this.changeWord} className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
+                        <span className="card-title">Your random german word:</span>
+                        <h1>{ this.state.randomWord }</h1>
+                        <div id="actions">
+                            <button onClick={this.changeWord} className="waves-effect waves-light btn-small indigo darken-4">Another one?</button>
+                            <a href="#" id="duden" className="waves-effect waves-light btn-small yellow accent-4">Duden this?</a>
+                        </div>
                      </div>
                     </div>
                     </div>

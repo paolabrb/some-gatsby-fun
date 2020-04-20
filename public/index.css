@@ -1,0 +1,16 @@
+#duden:hover, #brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.card-container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#actions {
+    max-width: 40%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}

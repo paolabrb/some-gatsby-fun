@@ -5,7 +5,7 @@ const Navbar = () => {
     return(
     <nav>
         <div className="nav-wrapper indigo darken-4">
-            <Link to="/" className="brand-logo center">Das Leben ist kein Ponyhof</Link>
+            <Link to="/" id="brand" className="brand-logo center">randomGermanWord</Link>
         </div>
     </nav>
     )
