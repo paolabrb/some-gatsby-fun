@@ -19,7 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "duden-search-api": "^1.0.7",
-    "gatsby": "^2.20.12",
+    "gatsby": "^2.32.13",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
